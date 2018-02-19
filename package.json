@@ -1,0 +1,16 @@
+{
+  "name": "botbuilder-longrun-warning-middleware",
+  "version": "0.0.1",
+  "description": "Botbuilder-framework middleware to warn of long-running activities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bashdx",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^4.0.0-m1.4",
+    "botbuilder-services": "^4.0.0-m1.2",
+    "restify": "^6.3.4"
+  }
+}
