@@ -1,7 +1,7 @@
 const { Bot } = require('botbuilder');
 const { BotFrameworkAdapter } = require('botbuilder-services');
 const restify = require('restify');
-const warning = require('./longrunningwarning');
+const warning = require('./longrunwarning');
 
 // Create server
 let server = restify.createServer();
