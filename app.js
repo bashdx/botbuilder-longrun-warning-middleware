@@ -19,12 +19,18 @@ server.post('/api/messages', adapter.listen());
 // Initialize bot by passing it adapter
 const bot = new Bot(adapter);
 
-bot.use(warning);
+//add middleware, define callback for timeout and optional threshold value
+// bot.use(warning((context) => { console.log("timeout!"); }));
+bot.use(warning("string"));
 
 // Define the bots onReceive message handler
 bot.onReceive((context) => {
     console.log("Received message");
     if (context.request.type === 'message') {
-            context.showTyping().delay(5000).reply(`Hello World`);
+            //test using promise
+            return new Promise(
+                (resolve, reject) => {
+                     setTimeout(() => resolve() , 15000);
+                });
         }
 });
