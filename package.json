@@ -1,8 +1,8 @@
 {
-  "name": "botbuilder-longrun-warning-middleware",
+  "name": "botbuilder-timeoutwarning-middleware",
   "version": "0.0.1",
   "description": "Botbuilder-framework middleware to warn of long-running activities",
-  "main": "index.js",
+  "main": "botbuilder-timeoutwarning.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
