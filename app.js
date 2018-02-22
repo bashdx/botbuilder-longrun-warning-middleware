@@ -1,7 +1,7 @@
 const { Bot } = require('botbuilder');
 const { BotFrameworkAdapter } = require('botbuilder-services');
 const restify = require('restify');
-const warning = require('./longrunwarning');
+const warning = require('botbuilder-timeoutwarning-middleware');
 
 // Create server
 let server = restify.createServer();
@@ -20,8 +20,7 @@ server.post('/api/messages', adapter.listen());
 const bot = new Bot(adapter);
 
 //add middleware, define callback for timeout and optional threshold value
-// bot.use(warning((context) => { console.log("timeout!"); }));
-bot.use(warning("string"));
+bot.use(warning((context) => { console.log("timeout!"); }));
 
 // Define the bots onReceive message handler
 bot.onReceive((context) => {
