@@ -13,7 +13,7 @@ The purpose of this middleware is to indicate long-running activities. The means
 
 - import using `require` statement:
 
-`const timeoutwarning = requir('botbuilder-timeoutwarning-middleware');`
+`const timeoutwarning = require('botbuilder-timeoutwarning-middleware');`
 
 - call `bot.use()` and provide a _callback_ and (optionally) a time-out _threshold_ in milli-seconds:
 
@@ -26,3 +26,7 @@ The purpose of this middleware is to indicate long-running activities. The means
 2018/02/22 v0.0.1
 
 - Initial release
+
+## Repo on github.com
+
+[https://github.com/bashdx/botbuilder-longrun-warning-middleware](https://github.com/bashdx/botbuilder-longrun-warning-middleware)
