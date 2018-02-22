@@ -1,6 +1,6 @@
 {
   "name": "botbuilder-timeoutwarning-middleware",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Botbuilder-framework middleware to warn of long-running activities",
   "main": "botbuilder-timeoutwarning.js",
   "scripts": {
